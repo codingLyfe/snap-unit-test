@@ -11,6 +11,13 @@ class foo {
 
 		$this->profile = new Profile(generateUUidV4(), null, "mark@markymark.io", $this->VALID_PROFILE_HASH, "Mark Jones", $this->VALID_PROFILE_SALT);
 		$this->profile->insert($this->getPDO());
+
+		$this->VALID_ARTICLEDATETIME = new \DateTime();
+
+
 	}
+
+
+
 
 }
